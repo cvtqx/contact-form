@@ -1,0 +1,158 @@
+:root{
+--clr-green-lighter: hsl(148, 38%, 91%);
+--clr-green-medium: hsl(169, 82%, 27%);
+--clr-red: hsl(0, 66%, 54%);
+--clr-white: hsl(0, 0%, 100%);
+--clr-grey-medium: hsl(186, 15%, 59%);
+--clr-grey-darker: hsl(187, 24%, 22%); 
+
+--fw-400: 400;
+--fw-700: 700;
+}
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* end of CSS reset */
+
+
+html,
+body {
+  height: 100%;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-green-lighter);
+  color: var(--clr-grey-darker);
+}
+
+.form-container{
+    width: 90vw;
+    max-width: 360px;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    background-color: var(--clr-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, .form-group, button{
+    margin: 1rem;
+}
+
+.form-group:not(#consentDiv){
+    display: flex;
+    flex-direction: column;
+}
+
+input:not([type="checkbox"]):not([type="radio"]), #generalEnquiryDiv, #supportRequestDiv{
+    height: 3rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--clr-grey-darker);
+    cursor: pointer;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus, textarea:focus{
+    border: 2px solid var(--clr-green-medium);
+}
+
+ 
+label{
+    margin-bottom: 0.5rem;
+}
+
+#generalEnquiryDiv, #supportRequestDiv{
+    align-content: center;
+    padding-left: 1rem;
+    
+}
+
+/* add class="selected" to parent div when radio button is selected */
+
+#generalEnquiryDiv.selected, #supportRequestDiv.selected{
+   border: 2px solid var(--clr-green-medium);
+   background-color: var(--clr-green-lighter);
+}
+
+#generalEnquiryDiv input, #supportRequestDiv input, #consent, button{
+cursor: pointer;
+}
+
+#generalEnquiryDiv{
+    margin-bottom: 1rem;
+}
+
+.asterisk{
+    color: var(--clr-green-medium)
+}
+
+
+textarea{
+ border-radius: 5px;
+ outline: none;
+ border: 1px solid var(--clr-grey-darker);
+} 
+
+.error{
+    color: var(--clr-red);
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.form-group input.error-input, .form-group textarea.error-input{
+    border: 1px solid var(--clr-red);
+}
+
+
+#submit-button{
+    background-color: var(--clr-green-medium);
+    color: var(--clr-white);
+    border: none;
+    height: 3rem;
+    width: 90%;
+    border-radius: 5px;
+}
+
+/*  success toast */
+
+#successMessage{
+    width: 100%;
+    background-color: var(--clr-grey-darker);
+    color: var(--clr-white);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* TO DO: change color of radio input on select, change color of checkbox on select, desktop design,  */
+
