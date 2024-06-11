@@ -45,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: var(--clr-green-lighter);
   color: var(--clr-grey-darker);
 }
@@ -176,20 +177,20 @@ textarea {
   body {
     font-size: 0.8rem;
   }
+
   .form-container {
     width: 650px;
     max-width: 650px;
     height: fit-content;
   }
 
-   h1,
-  .form-group,
-  button {
+  h1,
+  .form-group {
     margin: 0.5rem;
   }
 
-  h1, button{
-    padding:0.5rem;
+  h1 {
+    padding: 0.5rem;
   }
 
   #contactForm {
@@ -243,11 +244,11 @@ grid-area: label;
   }
   #submit-button {
     grid-area: item7;
-    
+    width: auto;
   }
 
   .error {
-  font-size: 0.6rem;
-  margin-top: 0.6rem;
-}
+    font-size: 0.6rem;
+    margin-top: 0.6rem;
+  }
 }
