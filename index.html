@@ -19,23 +19,32 @@
     <link
       rel="stylesheet"
       href="./style.css" />
-      <script defer src="script.js"></script>
     <title>Contact form</title>
   </head>
   <body>
+    <div
+      class="success-message"
+      id="successMessage"
+      hidden>
+      <img
+        src="./assets/images/icon-success-check.svg"
+        alt="Check mark icon"
+        class="success-icon" />
+      Message Sent! Thanks for completing the form. We'll be in touch soon!
+    </div>
     <div class="form-container">
       <h1>Contact Us</h1>
       <form id="contactForm">
-        <div class="form-group">
+        <div
+          class="form-group"
+          id="firstName-container">
           <label for="firstName"
             >First Name <span class="asterisk">*</span>
           </label>
           <input
             type="text"
             id="firstName"
-            name="firstName"
-            
-             />
+            name="firstName" />
           <span
             class="error"
             id="firstNameError"
@@ -43,15 +52,16 @@
             >This field is required</span
           >
         </div>
-        <div class="form-group">
+        <div
+          class="form-group"
+          id="lastName-container">
           <label for="lastName"
             >Last Name <span class="asterisk">*</span>
           </label>
           <input
             type="text"
             id="lastName"
-            name="lastName"
-             />
+            name="lastName" />
           <span
             class="error"
             id="lastNameError"
@@ -59,15 +69,16 @@
             >This field is required</span
           >
         </div>
-        <div class="form-group">
+        <div
+          class="form-group"
+          id="email-container">
           <label for="email"
             >Email Address <span class="asterisk">*</span>
           </label>
           <input
             type="email"
             id="email"
-            name="email"
-             />
+            name="email" />
           <span
             class="error"
             id="emailError"
@@ -75,15 +86,16 @@
             >Please enter a valid email address</span
           >
         </div>
-        <div class="form-group" id="queryType">
+        <div
+          class="form-group"
+          id="queryType">
           <label>Query Type <span class="asterisk">*</span> </label>
           <div id="generalEnquiryDiv">
             <input
               type="radio"
               id="generalEnquiry"
               name="queryType"
-              value="generalEnquiry"
-               />
+              value="generalEnquiry" />
             <label for="generalEnquiry">General Enquiry</label>
           </div>
           <div id="supportRequestDiv">
@@ -91,8 +103,7 @@
               type="radio"
               id="supportRequest"
               name="queryType"
-              value="supportRequest"
-               />
+              value="supportRequest" />
             <label for="supportRequest">Support Request</label>
           </div>
           <span
@@ -102,13 +113,14 @@
             >Please select a query type</span
           >
         </div>
-        <div class="form-group">
+        <div
+          class="form-group"
+          id="message-container">
           <label for="message">Message <span class="asterisk">*</span> </label>
           <textarea
             id="message"
             name="message"
-            rows="8"
-            ></textarea>
+            rows="8"></textarea>
           <span
             class="error"
             id="messageError"
@@ -123,8 +135,7 @@
             type="checkbox"
             id="consent"
             name="consent"
-            value="ok"           
-             />
+            value="ok" />
           <label for="consent"
             >I consent to being contacted by the team
             <span class="asterisk">*</span></label
@@ -133,7 +144,6 @@
             class="error"
             id="consentError"
             hidden
-            
             >To submit this form, please consent to being contacted.</span
           >
         </div>
@@ -143,20 +153,13 @@
           Submit
         </button>
       </form>
-      <div
-        class="success-message"
-        id="successMessage"
-        hidden
-  >
-  <img src="./assets/images/icon-success-check.svg" alt="Check mark icon" class="success-icon">      
-  Message Sent! Thanks for completing the form. We'll be in touch soon!
-      </div>
     </div>
     <!-- <footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-  </footer> --> 
+  </footer> -->
+    <script src="script.js"></script>
   </body>
 </html>

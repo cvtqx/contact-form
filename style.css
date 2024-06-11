@@ -1,13 +1,13 @@
-:root{
---clr-green-lighter: hsl(148, 38%, 91%);
---clr-green-medium: hsl(169, 82%, 27%);
---clr-red: hsl(0, 66%, 54%);
---clr-white: hsl(0, 0%, 100%);
---clr-grey-medium: hsl(186, 15%, 59%);
---clr-grey-darker: hsl(187, 24%, 22%); 
+:root {
+  --clr-green-lighter: hsl(148, 38%, 91%);
+  --clr-green-medium: hsl(169, 82%, 27%);
+  --clr-red: hsl(0, 66%, 54%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey-medium: hsl(186, 15%, 59%);
+  --clr-grey-darker: hsl(187, 24%, 22%);
 
---fw-400: 400;
---fw-700: 700;
+  --fw-400: 400;
+  --fw-700: 700;
 }
 
 /* CSS reset */
@@ -21,7 +21,10 @@
   margin: 0;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -32,11 +35,10 @@ body {
 
 /* end of CSS reset */
 
-
 html,
 body {
   height: 100%;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 body {
@@ -47,103 +49,117 @@ body {
   color: var(--clr-grey-darker);
 }
 
-.form-container{
-    width: 90vw;
-    max-width: 360px;
-    margin: 2rem 1rem;
-    padding: 1rem;
-    background-color: var(--clr-white);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+.form-container {
+  width: 90vw;
+  max-width: 360px;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-h1, .form-group, button{
-    margin: 1rem;
+h1,
+.form-group,
+button {
+  margin: 1rem;
 }
 
-.form-group:not(#consentDiv){
-    display: flex;
-    flex-direction: column;
+.form-group:not(#consentDiv) {
+  display: flex;
+  flex-direction: column;
 }
 
-input:not([type="checkbox"]):not([type="radio"]), #generalEnquiryDiv, #supportRequestDiv{
-    height: 3rem;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid var(--clr-grey-darker);
-    cursor: pointer;
+input:not([type='checkbox']):not([type='radio']),
+#generalEnquiryDiv,
+#supportRequestDiv {
+  height: 3rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--clr-grey-darker);
+  cursor: pointer;
 }
 
-input:not([type="checkbox"]):not([type="radio"]):focus, textarea:focus{
-    border: 2px solid var(--clr-green-medium);
+input:not([type='checkbox']):not([type='radio']):focus,
+textarea:focus {
+  border: 2px solid var(--clr-green-medium);
 }
 
- 
-label{
-    margin-bottom: 0.5rem;
+input[type='checkbox'],
+input[type='radio'] {
+  accent-color: var(--clr-green-medium);
 }
 
-#generalEnquiryDiv, #supportRequestDiv{
-    align-content: center;
-    padding-left: 1rem;
-    
+label {
+  margin-bottom: 0.5rem;
+}
+
+#generalEnquiryDiv,
+#supportRequestDiv {
+  align-content: center;
+  padding-left: 1rem;
 }
 
 /* add class="selected" to parent div when radio button is selected */
 
-#generalEnquiryDiv.selected, #supportRequestDiv.selected{
-   border: 2px solid var(--clr-green-medium);
-   background-color: var(--clr-green-lighter);
+#generalEnquiryDiv.selected,
+#supportRequestDiv.selected {
+  border: 2px solid var(--clr-green-medium);
+  background-color: var(--clr-green-lighter);
 }
 
-#generalEnquiryDiv input, #supportRequestDiv input, #consent, button{
-cursor: pointer;
+#generalEnquiryDiv input,
+#supportRequestDiv input,
+#consent,
+button {
+  cursor: pointer;
 }
 
-#generalEnquiryDiv{
-    margin-bottom: 1rem;
+#generalEnquiryDiv {
+  margin-bottom: 1rem;
 }
 
-.asterisk{
-    color: var(--clr-green-medium)
+.asterisk {
+  color: var(--clr-green-medium);
 }
 
-
-textarea{
- border-radius: 5px;
- outline: none;
- border: 1px solid var(--clr-grey-darker);
-} 
-
-.error{
-    color: var(--clr-red);
-    font-size: 0.8rem;
-    margin-top: 0.8rem;
+textarea {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--clr-grey-darker);
 }
 
-.form-group input.error-input, .form-group textarea.error-input{
-    border: 1px solid var(--clr-red);
+.error {
+  color: var(--clr-red);
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
 }
 
+.form-group input.error-input,
+.form-group textarea.error-input {
+  border: 1px solid var(--clr-red);
+}
 
-#submit-button{
-    background-color: var(--clr-green-medium);
-    color: var(--clr-white);
-    border: none;
-    height: 3rem;
-    width: 90%;
-    border-radius: 5px;
+#submit-button {
+  background-color: var(--clr-green-medium);
+  color: var(--clr-white);
+  border: none;
+  height: 3rem;
+  width: 90%;
+  border-radius: 5px;
 }
 
 /*  success toast */
 
-#successMessage{
-    width: 100%;
-    background-color: var(--clr-grey-darker);
-    color: var(--clr-white);
-    border-radius: 8px;
-    padding: 1rem;
+#successMessage {
+  width: 80%;
+  max-width: 360px;
+  margin-top: 1rem;
+  background-color: var(--clr-grey-darker);
+  color: var(--clr-white);
+  border-radius: 8px;
+  padding: 1rem;
 }
 
 /* footer */
@@ -154,5 +170,84 @@ textarea{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-/* TO DO: change color of radio input on select, change color of checkbox on select, desktop design,  */
+/* TO DO: desktop design: query type div and center the button  */
 
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .form-container {
+    width: 650px;
+    max-width: 650px;
+    height: fit-content;
+  }
+
+   h1,
+  .form-group,
+  button {
+    margin: 0.5rem;
+  }
+
+  h1, button{
+    padding:0.5rem;
+  }
+
+  #contactForm {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-areas:
+      'item1 item2'
+      'item3 item3'
+      'item4 item4'
+      'item5 item5'
+      'item6 item6'
+      'item7 item7';
+    grid-template-columns: 300px 300px;
+  }
+
+  #firstName-container {
+    grid-area: item1;
+  }
+
+  #lastName-container {
+    grid-area: item2;
+  }
+  #email-container {
+    grid-area: item3;
+  }
+  #queryType {
+    grid-area: item4;
+    /* display: grid;
+    grid-template-areas: 
+    'label label'
+    'general support'; */
+  }
+
+  /* #queryType>label{
+    background-color: red;
+grid-area: label;
+  }
+
+  #generalEnquiryDiv{
+    grid-area: general;
+  }
+   #supportRequestDiv{
+    grid-area: support;
+  } */
+  #message-container {
+    grid-area: item5;
+  }
+
+  #consentDiv {
+    grid-area: item6;
+  }
+  #submit-button {
+    grid-area: item7;
+    
+  }
+
+  .error {
+  font-size: 0.6rem;
+  margin-top: 0.6rem;
+}
+}
