@@ -123,7 +123,9 @@ document.addEventListener('DOMContentLoaded', function () {
       lastName.value = '';
       email.value = '';
       generalEnquiry.checked = false;
-      supportRequest.checked = false;
+        supportRequest.checked = false;
+        generalEnquiryDiv.classList.remove('selected');
+        supportRequestDiv.classList.remove('selected');
       message.value = '';
       consent.checked = false;
     }

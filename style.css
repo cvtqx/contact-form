@@ -171,11 +171,11 @@ textarea {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-/* TO DO: desktop design: query type div and center the button  */
+/* TO DO: desktop design: query type div  */
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .form-container {
@@ -186,7 +186,7 @@ textarea {
 
   h1,
   .form-group {
-    margin: 0.5rem;
+    margin: 0.5rem 1rem;
   }
 
   h1 {
@@ -203,7 +203,7 @@ textarea {
       'item5 item5'
       'item6 item6'
       'item7 item7';
-    grid-template-columns: 300px 300px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #firstName-container {
@@ -216,25 +216,25 @@ textarea {
   #email-container {
     grid-area: item3;
   }
-  #queryType {
+  .form-group#queryType {
     grid-area: item4;
-    /* display: grid;
-    grid-template-areas: 
-    'label label'
-    'general support'; */
+    display: grid;
+    grid-template-areas:
+      'subitem1 subitem1'
+      'subitem2 subitem3';
+    column-gap: 2rem;
   }
 
-  /* #queryType>label{
-    background-color: red;
-grid-area: label;
+  #queryType > label {
+    grid-area: subitem1;
   }
 
-  #generalEnquiryDiv{
-    grid-area: general;
+  #generalEnquiryDiv {
+    grid-area: subitem2;
   }
-   #supportRequestDiv{
-    grid-area: support;
-  } */
+  #supportRequestDiv {
+    grid-area: subitem3;
+  }
   #message-container {
     grid-area: item5;
   }
@@ -247,8 +247,8 @@ grid-area: label;
     width: auto;
   }
 
-  .error {
+  /* .error {
     font-size: 0.6rem;
     margin-top: 0.6rem;
-  }
+  } */
 }
