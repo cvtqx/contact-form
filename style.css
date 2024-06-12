@@ -171,7 +171,6 @@ textarea {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-/* TO DO: desktop design: query type div  */
 
 @media screen and (min-width: 1024px) {
   body {
@@ -247,8 +246,4 @@ textarea {
     width: auto;
   }
 
-  /* .error {
-    font-size: 0.6rem;
-    margin-top: 0.6rem;
-  } */
 }
