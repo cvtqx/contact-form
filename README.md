@@ -8,13 +8,9 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -52,7 +48,6 @@ Success toast:
 - Solution URL: [Github](https://github.com/cvtqx/contact-form)
 - Live Site URL: [GithubPages](https://cvtqx.github.io/contact-form/)
 
-## My process
 
 ### Built with
 
